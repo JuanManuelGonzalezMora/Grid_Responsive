@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: monospace;
+  font-size: 1.5rem;
+  min-height: 100%;
+  background-color: #fff; 
+}
+
+
+.gridcontainer * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.m1 {
+  grid-area: m1;
+  background-color: #000;
+    color: #ffffff;
+}
+
+.m1 img{
+	 display: block;
+    width: 30%;
+    margin-top: 5px;
+}
+
+.m2 {
+  grid-area: m2;
+   background-color: #000;
+    color: #ffffff;
+}
+
+.m2 img{
+	 display: block;
+    width: 25%;
+    margin-top: 3px;
+}
+
+.m3 {
+  grid-area: m3;
+   background-color: #000;
+    color: #ffffff;
+}
+
+.m3 img{
+	 display: block;
+    width: 25%;
+    margin-top: 3px;
+}
+
+.m4 {
+  grid-area: m4;
+   background-color: #000;
+    color: #ffffff;
+}
+
+.m4 img{
+	 display: block;
+    width: 25%;
+    margin-top: 3px;
+}
+
+.header {
+	 background-color: #000;
+    color: #ffffff;
+  grid-area: header;
+}
+
+.gridcontainer .header img {
+    display: block;
+    width: 6%;
+    margin-top: 0.1px;
+}
+
+.navbar {
+ background-color: #591515;
+  color: #ffffff;
+  grid-area: navbar;
+}
+
+.enlace{
+	height: 30px;
+	text-decoration: none;
+	color: #fff;
+	margin: 10px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+   background-color: #000;
+    color: #ffffff;
+}
+.gridcontainer .sidebar img {
+    display: block;
+    width: 30%;
+    margin-top: 5px;
+}
+
+.footer {
+	background-color: #591515;
+    color: #ffffff;
+  grid-area: footer;
+}
+
+#logo{
+	float:left;
+}
+#logo2{
+	float:right;
+}
+
+@media (min-width: 0px) {
+  .gridcontainer {
+    display: grid;
+    gap: 10px;
+    grid-template: "header header" 100px "navbar navbar" 50px "m1 m2" 150px "m3 m4" 150px "sidebar sidebar" 100px "footer footer" 50px;
+  }
+}
+@media (min-width: 401px) {
+  .gridcontainer {
+    display: grid;
+    gap: 10px;
+    grid-template: "header header header" 100px "navbar navbar navbar" 50px "m1 m1 sidebar" 150px "m2 m2 sidebar" 150px "m3 m4 sidebar" 150px "footer footer footer" 50px;
+  }
+}
+@media (min-width: 800px) {
+  .gridcontainer {
+    display: grid;
+    gap: 10px;
+    grid-template: "header header header header header" 100px "navbar navbar navbar navbar navbar" 50px "m1 m1 m2 m2 sidebar" 200px "m3 m3 m4 m4 sidebar" 200px "footer footer footer footer footer" 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
